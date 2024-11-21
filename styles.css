@@ -1,0 +1,121 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Login Container */
+.login-container {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #262626;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #262626;
+}
+
+/* Submit Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0095f6;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #007bb5;
+}
+
+/* Error Message */
+p {
+    margin-top: 20px;
+    color: red;
+    font-size: 14px;
+}
+
+/* Hacked Message */
+#hackedMessage {
+    font-size: 32px;
+    color: red;
+    font-weight: bold;
+    margin-top: 20px;
+    display: none; /* Initially hidden */
+}
+
+/* Video */
+.floating-video {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: auto;
+    opacity: 0.7;
+    display: none; /* Initially hidden */
+}
+
+/* Animation for video movement */
+@keyframes moveAround {
+    0% { top: 20px; left: 20px; }
+    25% { top: 50%; left: 50%; }
+    50% { top: 80%; left: 80%; }
+    75% { top: 50%; left: 10%; }
+    100% { top: 20px; left: 20px; }
+}
+
+@media (max-width: 600px) {
+    .login-container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    #hackedMessage {
+        font-size: 28px;
+    }
+}
